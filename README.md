@@ -166,7 +166,7 @@ ffplay -nodisp rtsp://localhost:8554/mystream
 
 # ⚠️ Problemas comuns e soluções
 
-## ❌ Áudio não funciona
+### ❌ Áudio não funciona
 
 * Verifique se o microfone está captando:
 
@@ -186,7 +186,7 @@ alsamixer
 
 ---
 
-## ❌ Sem som no servidor?
+### ❌ Sem som no servidor?
 
 * Executar o comando para teste de áudio:
 ```bash
@@ -199,7 +199,7 @@ Se não sair som:
 
 ---
 
-## ❌ Erro de timestamp (DTS / backward in time)
+### ❌ Erro de timestamp (DTS / backward in time)
 
 Já corrigido com:
 
@@ -209,7 +209,7 @@ Já corrigido com:
 
 ---
 
-## ❌ Codec não suportado
+### ❌ Codec não suportado
 
 Use:
 
@@ -218,7 +218,7 @@ Use:
 
 ---
 
-# Observações importantes
+## Observações importantes
 
 * WebRTC exige codecs compatíveis (H264 + Opus recomendado)
 * Servidor deve estar rodando antes do FFmpeg
@@ -228,7 +228,7 @@ Use:
 
 <br></br>
 
-# Resumo dos comandos para rodar o FFMepg e MediaMTX:
+## Resumo dos comandos para rodar o FFMepg e MediaMTX:
 
 MediaMTX
 ```bash
