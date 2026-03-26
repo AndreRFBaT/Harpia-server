@@ -19,7 +19,7 @@ Este guia completo mostra como configurar uma transmissão de vídeo + áudio us
 ---
 <br></br>
 <details>
-  <summary> <strong style="font-size:20px;">⚙️ System Requirements & Environment Setup</strong></summary>
+  <summary> <strong style="font-size:24px;">⚙️ System Requirements & Environment Setup</strong></summary>
 
 ## 1. Pré-requisitos
 
@@ -169,7 +169,7 @@ ffplay -nodisp rtsp://localhost:8554/mystream
 <br></br>
 
 <details>
-  <summary> <strong style="font-size:20px;">⚠️ Troubleshooting</strong></summary>
+  <summary> <strong style="font-size:24px;">⚠️ Troubleshooting</strong></summary>
 
 ### ❌ Áudio não funciona
 
