@@ -17,6 +17,9 @@ Este guia completo mostra como configurar uma transmissão de vídeo + áudio us
 * [Advanced Linux Sound Architecture (ALSA) - ]() Subsistema de áudio do kernel Linux que fornece drivers para dispositivos de som e uma interface de baixo nível para aplicações (via libasound). Suporta reprodução, captura, controle de dispositivos e MIDI. Implementa mecanismos como PCM (Pulse Code Modulation), mixers e controle de hardware, servindo como base para camadas de mais alto nível como PulseAudio e PipeWire.
 
 ---
+<br></br>
+<details>
+  <summary> <strong style="font-size:20px;">⚙️ System Requirements & Environment Setup</strong></summary>
 
 ## 1. Pré-requisitos
 
@@ -160,11 +163,13 @@ http://192.168.NN.NNN:8889/mystream
 ```bash
 ffplay -nodisp rtsp://localhost:8554/mystream
 ```
+</details>
 
 ---
 <br></br>
 
-# ⚠️ Problemas comuns e soluções
+<details>
+  <summary> <strong style="font-size:20px;">⚠️ Troubleshooting</strong></summary>
 
 ### ❌ Áudio não funciona
 
@@ -241,8 +246,41 @@ FFMepg
 ffmpeg -f v4l2 -i /dev/video0 -f alsa -i hw:0,0 -map 0:v -map 1:a -vcodec libx264 -preset veryfast -tune zerolatency -pix_fmt yuv420p -acodec libopus -ar 48000 -b:a 96k -ac 2 -af "volume=5,aresample=async=1:first_pts=0" -f rtsp rtsp://localhost:8554/mystream
 
 ```
+</details>
+
+---
 
 
 
 <br></br>
-# Autor
+
+## 💻 Desenvolvedores:
+
+**Andre Rodrigues de Freitas Batista** – Desenvolvedor de Software | Bacharel em Tecnologia da Informação | Bacharelado em Engenharia de Computação (em andamento) | Pesquisador de Iniciação Científica na IFSC/USP | Desenvolvimento de Software e Boas Práticas de Engenharia.
+### Contatos:
+
+<div>
+  <a href="https://www.linkedin.com/in/andre-rodrigues-de-freitas-batista/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" target="_blank">
+  </a>
+  <a href="https://github.com/AndreRFBaT" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
+  <a href="https://gitlab.com/AndreRFBaT" target="_blank"><img src="https://img.shields.io/badge/-GitLab-FCA121?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" target="_blank"></a>
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=andrerfbatista@gmail.com" target="_blank">
+  <img src="https://img.shields.io/badge/-Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" />
+  </a>
+</div>
+<br></br>
+
+---
+
+## 👥 Contribuidores:
+
+**André Felipe Dos Reis** - Bacharel em Ciências Econômicas, Bacharel em Tecnologia da Informação, Graduando em Engenharia da Computação e pós-graduando em Gestão de Projetos. Gestão de Projetos | Compras | Testes de Software |Quality Assurance.
+### Contatos:
+<div>
+  <a href="https://www.linkedin.com/in/andrefdr/" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" target="_blank">
+  </a>
+</div>
+
+---
