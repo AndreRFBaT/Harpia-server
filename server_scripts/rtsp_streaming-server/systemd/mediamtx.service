@@ -1,0 +1,17 @@
+[Unit]
+Description=MediaMTX Streaming Server
+After=network-online.target
+Wants=network-online.target
+
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+ExecStart=/home/USER/streaming_video/mediamtx /home/kaos/streaming_video/mediamtx.yml
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
+# Change USER name
