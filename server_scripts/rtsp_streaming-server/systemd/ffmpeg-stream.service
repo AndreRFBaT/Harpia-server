@@ -1,0 +1,17 @@
+[Unit]
+Description=FFmpeg Streaming
+After=network-online.target mediamtx.service
+Wants=network-online.target
+Requires=mediamtx.service
+
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+[Service]
+ExecStart=/usr/local/bin/start-stream.sh
+Restart=always
+RestartSec=5
+
+
+[Install]
+WantedBy=multi-user.target
