@@ -8,14 +8,24 @@ O Harpia Server é uma iniciativa que visa conectar admiradores e estudiosos de 
 ---
 ## Estrutura do projeto
 
-```
-rtsp-streaming-server/
-├── scripts/                    → Lógica (bash)
-│   └── start-stream.sh
-├── systemd/                    → Serviços do Linux
-│   ├── mediamtx.service
-│   └── ffmpeg-stream.service
-├── README.md                   → Documentação
+```bash
+├── config-rtsp-harpia-server
+│   └── server_scripts               -> Scripts do servidor RTSP
+│       └── rtsp_streaming-server
+│           ├── scripts_sh           -> Scripts shell para execução do streaming
+│           ├── systemd              -> Configuração de serviço para Linux (systemd)
+│           └── EXEC-SYSTEMD-INFO.md -> Instruções para execução como serviço
+│
+├── frontend-harpia-server           -> Aplicação frontend em React (Vite)
+│   ├── src                          -> Código-fonte da aplicação
+│   ├── public                       -> Arquivos estáticos
+│   ├── package.json                 -> Dependências e scripts
+│   └── vite.config.js               -> Configuração do Vite
+│
+├── img                              -> Imagens utilizadas na documentação (README)
+│   └── prnt_audio_test.png
+│
+└── README.md                        -> Documentação geral do projeto
 ```
 
 ## Streaming de Vídeo e Áudio com Ubuntu Server usando:
