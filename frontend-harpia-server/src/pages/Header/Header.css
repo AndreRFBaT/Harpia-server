@@ -1,0 +1,165 @@
+header {
+  /* position: fixed; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 4.5rem;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: inherit;
+}
+
+/* Alinha o efeito visual lado a lado com o título */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço entre o olho e o texto */
+  text-decoration: none;
+}
+
+/* Container que segura o olho e os arcos sobrepostos */
+.cyber-eye-wrapper {
+  position: relative;
+  width: 40px;  /* Tamanho total do efeito */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation: eyeLivePulse 1s infinite ; /* Animação de pulso para o efeito */
+}
+
+/* Imagem do Olho no Centro */
+.center-eye {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  z-index: 2;
+  animation: girar 8s infinite linear,
+}
+
+/* Arco Externo (Gira em sentido horário) */
+.outer-arc {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: 2px solid transparent;
+  border-top-color: #00ff66;
+  border-bottom-color: #00ff66;
+  border-radius: 50%;
+  z-index: 3;
+  animation: girar 1s infinite linear;
+}
+
+/* Arco Interno (Gira ao contrário / sentido anti-horário) */
+.inner-arc {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  background: conic-gradient(
+    transparent 0deg 10deg,
+    #00b347 20deg 160deg,
+    transparent 160deg 200deg,
+    #00b347 200deg 340deg,
+    transparent 340deg 360deg
+  );
+
+  animation: girarAoContrario 2s infinite linear;
+}
+
+/* Animação para girar em sentido horário */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animação para girar em sentido anti-horário */
+@keyframes girarAoContrario {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.live-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.live-indicator {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: #00ff66;
+
+  animation: livePulse 1s infinite;
+}
+
+@keyframes livePulse {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(0, 255, 102, 0.7);
+  }
+
+  70% {
+    opacity: 0.7;
+    box-shadow: 0 0 0 8px rgba(0, 255, 102, 0);
+  }
+
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(0, 255, 102, 0);
+  }
+}
+
+@keyframes eyeLivePulse {
+  0% {
+    opacity: 1;
+    filter: drop-shadow(0 0 2px #00ff66);
+  }
+
+  50% {
+    opacity: 0.3;
+    filter: drop-shadow(0 0 12px #00ff66);
+  }
+
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 2px #00ff66);
+  }
+}
