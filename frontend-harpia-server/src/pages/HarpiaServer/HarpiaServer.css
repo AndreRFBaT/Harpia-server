@@ -1,0 +1,113 @@
+/* página principal */
+#harpia {
+  min-height: 100vh;
+  width: 100%;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* padding: 0 8%; */
+  padding-left: 12%;
+  position: relative;
+
+  padding-top: 200px;
+  box-sizing: border-box;
+}
+
+/* efeito de sobreposição */
+#harpia::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+/* conteúdo principal */
+.hero-content {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* gap: 4rem; */
+  position: relative;
+  z-index: 1;
+}
+
+/* conteúdo do texto */
+.hero-text {
+  flex: 1;
+  min-width: 0;
+  z-index: 2;
+}
+
+/* título */
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  -webkit-text-stroke: 1px var(--text-border);
+}
+
+/* subtítulo */
+.hero-text h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  /* width: 100%; */
+  /* display: block; */
+  white-space: nowrap;
+}
+
+/* conteúdo do parágrafo */
+.hero-text p {
+    width: 100%;
+    /* padding: 20px;  */
+    max-width: 100%;
+    margin: 0px 0;
+    box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+    text-align: justify; /* Alinha o texto para justificar */
+}
+
+/* botão */
+.hero-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  margin-top: -90px;
+  z-index: 2;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+}
