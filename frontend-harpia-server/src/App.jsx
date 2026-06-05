@@ -1,18 +1,20 @@
 import Header from "./pages/Header/Header.jsx";
 import HarpiaServer from "./pages/HarpiaServer/HarpiaServer.jsx";
-import Developers from "./pages/Developers/Developers.tsx";
-import Contact from "./pages/Contact/Contact.tsx";
-import LiveStations from "./pages/LiveStations/LiveStations.tsx";
-import About from "./pages/About/About.tsx";
+import EOP_IoT from "./pages/EOP-IoT/EOP_IoT.jsx";
+import Developers from "./pages/Developers/Developers.jsx";
+import Contact from "./pages/Contact/Contact.jsx";
+import LiveStations from "./pages/LiveStations/LiveStations.jsx";
+import About from "./pages/About/About.jsx";
 
 function App() {
   return (
     <>
       <Header />
       <HarpiaServer />
-      <About />
+      <EOP_IoT/>
       <LiveStations />
       <Developers />
+      <About />
       <Contact />
     </>
   );

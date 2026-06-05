@@ -1,0 +1,70 @@
+#eop_iot {
+  background-color: #f1efef;
+  color: #222;
+
+  padding: 120px 8%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.eop_iot-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.eop_iot-text {
+  flex: 1.2;
+}
+
+.eop_iot-text h1 {
+  color: #071f0a;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  /* text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-shadow: none;
+}
+
+.eop_iot-text h2 {
+  color: #071f0a;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 3.5rem;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  text-shadow: none;
+}
+
+.eop_iot-text p {
+  color: #042c09;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.eop_iot-text h1,
+.eop_iot-text h2,
+.eop_iot-text p {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.eop_iot-image {
+  flex: 1.3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.eop_iot-image img {
+  width: 120%;
+  max-width: none;
+  height: auto;
+  /* object-fit: contain; */
+  transform: none/*translateX(10%); */
+}
