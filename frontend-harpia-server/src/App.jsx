@@ -5,6 +5,7 @@ import Developers from "./pages/Developers/Developers.jsx";
 import Contact from "./pages/Contact/Contact.jsx";
 import LiveStations from "./pages/LiveStations/LiveStations.jsx";
 import About from "./pages/About/About.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <HarpiaServer />
       <EOP_IoT/>
       <LiveStations />
-      <Developers />
       <About />
+      <Developers />
       <Contact />
+      <Footer/>
     </>
   );
 }

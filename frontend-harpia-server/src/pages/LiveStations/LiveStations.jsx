@@ -15,6 +15,7 @@ function LiveStations() {
     return (
         <section id="live_stations">
             <h1>Estações ao vivo</h1>
+            <h2>Acesse as estações de observação online</h2>
 
             <div className="station-card">
                 <div className="video-container">
@@ -31,7 +32,7 @@ function LiveStations() {
 
                 <div className="station-info">
                     <div className="station-header">
-                        <h2>EOP - IOT - Estação 01</h2>
+                        <h3>EOP - IOT - Estação 01</h3>
                         <span className="channel-box">
                             <strong>Canal:</strong> Hapia Server
                         </span>

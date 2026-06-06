@@ -3,13 +3,14 @@
     min-height: auto;
     padding: 3rem 2rem;
     background: #000000;
+    padding-bottom: 10rem;
 }
 
 /* estilização do título */
 #live_stations h1 {
     text-align: left;
     margin-left: 5%;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
     -webkit-text-stroke: 1px var(--text-border);
     font-weight: bold;
 }
@@ -22,7 +23,22 @@
     margin-bottom: 1.5rem;
 }
 
-.station-header h2 {
+#live_stations h2 {
+    text-align: left;
+    margin-left: 5%;
+
+    margin-top: -5rem; /* aproxima do h1 */
+    margin-bottom: 5rem;
+
+    color: white;
+
+    font-size: 1.8rem;
+    font-weight: 500;
+
+    text-shadow: none;
+}
+
+.station-header h3 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: bold;
@@ -34,13 +50,13 @@
 .channel-box {
     background-color: #ffffff;
     color: #000000;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border: 2px solid #ffffff;
     padding: 4px 10px;
     border-radius: 6px;
     white-space: nowrap;
     /* alinhamento vertical do texto interno */
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
 }
 
@@ -49,7 +65,7 @@
 .video-container,
 .station-info,
 .map-container {
-    height: 200px;
+    height: 220px;
 }
 
 
@@ -76,8 +92,10 @@
 
 .station-info {
     border-radius: 16px;
-    padding: 1rem;
+    padding: 0.5rem;
     align-self: center;
+    margin-left: 5%;
+
 }
 
 .info-grid {
@@ -90,14 +108,16 @@
     align-items: center;
     gap: 5px;
 
+    font-size: 1rem;
+
     background: transparent;
     color: white;
 
-    padding: 8px 0px;
+    padding: 10px 0px;
 }
 
 .info-icon {
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: white;
 }
 
