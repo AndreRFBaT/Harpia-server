@@ -1,11 +1,25 @@
+import "./Developers.css";
+
+// import DeveloperCard from "../../components/DevelopersCard/DeveloperCard.jsx";
+import DevelopersCard from "../../components/DevelopersCard/DevelopersCard.jsx";
+
+import { developers } from "../../data/DevelopersData.js";
+
 function Developers() {
     return (
         <section id="developers">
-            <h2>Desenvolvedores</h2>
-                <p>Andre R. F. Batista</p>
-                {/* <p>André F. Dos Reis</p> */}
+            <h2>Desenvolvedores e contributores</h2>
 
+            <div className="developers-container">
+                {developers.map((developer) => (
+                    <DevelopersCard
+                        key={developer.email}
+                        {...developer}
+                    />
+                ))}
+            </div>
         </section>
     );
 }
+
 export default Developers;
