@@ -1,0 +1,114 @@
+#developers {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 5rem 2rem;
+    background: #000000;
+}
+
+/* padronizando o tamanho dos icones */
+.developers-name a svg,
+.developers-links a svg {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.developers-name,
+.developers-links,
+.developers-description {
+    width: 100%;
+}
+
+#developers h2 {
+    margin-bottom: 3rem;
+
+    font-size: 2.5rem;
+}
+
+.developers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: space-between;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.developers-name {
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+    width: 100%;
+    text-align: left;
+}
+
+.developers-name a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    gap: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.developers-photo {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 0 auto 1.5rem;
+}
+
+.developers-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+
+    padding: 1rem;
+
+}
+
+.developers-card h3 {
+    font-size: 1rem;
+    /* line-height: 1.1; */
+    max-width: 100%;
+
+    /* margin-bottom: 1rem; */
+}
+
+.developers-description {
+    /* line-height: 1; */
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+.developers-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.9rem;
+    gap: 8px;
+    width: 100%;
+}
+
+.developers-links a {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    /* font-weight: bold; */
+}
