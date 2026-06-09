@@ -13,7 +13,7 @@ function Developers() {
             <div className="developers-container">
                 {developers.map((developer) => (
                     <DevelopersCard
-                        key={developer.email}
+                        key={developer.name}
                         {...developer}
                     />
                 ))}
