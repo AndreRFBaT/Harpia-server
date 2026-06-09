@@ -21,7 +21,7 @@ export const developers = [
         github: "https://github.com/AndreRFBaT",
         email: "andrerfbatista@gmail.com",
         description:
-            "Desenvolvedor de Software | Bacharelado em Engenharia de Computação (em andamento) | Pesquisador de Iniciação Científica na IFSC/USP | Desenvolvimento de Software e Boas Práticas de Engenharia"
+            "Desenvolvedor de Software | Bacharel em Tecnologia da Informação | Bacharelado em Engenharia de Computação (em andamento) | Pesquisador de Iniciação Científica na IFSC/USP | Desenvolvimento de Software e Boas Práticas de Engenharia"
     },
     {
         name: "André Felipe Dos Reis",
