@@ -1,18 +1,38 @@
 /* configuração geral da página */
 #live_stations {
-    min-height: auto;
+    min-height: 100vh;
     padding: 3rem 2rem;
-    background: #000000;
+    padding-top: 200px;
     padding-bottom: 10rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
 }
 
-/* estilização do título */
+#live_stations::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 0;
+}
+
+/* estilização do título */
 #live_stations h1 {
     text-align: left;
     margin-left: 5%;
     margin-bottom: 7rem;
     -webkit-text-stroke: 1px var(--text-border);
     font-weight: bold;
+}
+
+.live-stations-content {
+    position: relative;
+    z-index: 1;
+
 }
 
 /* nova regra para alinha o título e o canal */
