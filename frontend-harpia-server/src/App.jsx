@@ -1,23 +1,22 @@
-import Header from "./pages/Header/Header.jsx";
-import HarpiaServer from "./pages/HarpiaServer/HarpiaServer.jsx";
-import EOP_IoT from "./pages/EOP-IoT/EOP_IoT.jsx";
-import Developers from "./pages/Developers/Developers.jsx";
-import Contact from "./pages/Contact/Contact.jsx";
-import LiveStations from "./pages/LiveStations/LiveStations.jsx";
-import About from "./pages/About/About.jsx";
-import Footer from "./components/Footer/Footer.jsx";
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+
+import Home from "./pages/Home/Home";
+import LiveStations from "./pages/LiveStations/LiveStations";
 
 function App() {
   return (
     <>
       <Header />
-      <HarpiaServer />
-      <EOP_IoT/>
-      <LiveStations />
-      <About />
-      <Developers />
-      <Contact />
-      <Footer/>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/live-stations" element={<LiveStations />} />
+      </Routes>
+
+      <Footer />
     </>
   );
 }
